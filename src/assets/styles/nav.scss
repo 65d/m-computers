@@ -1,0 +1,67 @@
+$primary-color: #000000c2;
+$secondary-color: white;
+$nav-height: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+
+.logo {
+    position: absolute;
+    left: 20px;
+    // font-family: "Silkscreen", sans-serif;
+
+        a {
+            font-weight: 700;
+            color: white !important;
+            text-decoration: none;
+            // font-size: 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+.navbar > ul {
+    
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    height: $nav-height;
+    background-color: $primary-color;
+    backdrop-filter: blur(20px);
+
+    .controol-btns {
+        padding: 0;
+        margin: 0 20px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
